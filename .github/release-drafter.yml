@@ -4,33 +4,38 @@ template: |
   # What's Changed
   $CHANGES
 categories:
-  - title: ' :boom: Breaking'
-    label: 'type: breaking'
-  - title: ':rocket: New'
-    label: 'type: feature'
+  - title: ':boom: Breaking Changes'
+    label: 'breaking change'
+  - title: ':rocket: New Features'
+    label: 'new feature'
   - title: ':bug: Bug Fixes'
-    label: 'type: bug'
+    label: 'bug fix'
+  - title: ':sparkles: Enhancement'
+    label: 'enhancement'
   - title: ':wrench: Maintenance'
-    label: 'type: maintenance'
+    label: 'maintenance'
   - title: ':book: Documentation'
-    label: 'type: docs'
+    label: 'documentation'
+  - title: ':shield: Security'
+    label: 'security fix'
   - title: ':gear: Dependency Updates'
-    label: 'type: dependencies'
+    label: 'dependencies'
 
 version-resolver:
   major:
     labels:
-      - 'type: breaking'
+      - 'breaking change'
   minor:
     labels:
-      - 'type: feature'
+      - 'new feature'
+      - 'enhancement'
   patch:
     labels:
-      - 'type: bug'
-      - 'type: maintenance'
-      - 'type: docs'
-      - 'type: dependencies'
-      - 'type: security'
+      - 'bug fix'
+      - 'maintenance'
+      - 'documentation'
+      - 'dependencies'
+      - 'security'
 
 exclude-labels:
   - 'skip-changelog'
